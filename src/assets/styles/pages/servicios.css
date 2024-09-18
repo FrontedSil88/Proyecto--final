@@ -1,0 +1,115 @@
+.servicios-hero img {
+  width: 50%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+
+
+.servicios-imagen {
+  width: 20%;
+  height: 20vh;
+  object-fit: cover;
+  text-align: center;
+}
+
+.servicios-titulo {
+  grid-column: span 5;
+  margin-top: var(--spacer-2xl);
+  margin-bottom: var(--spacer-2xl);
+  text-align: center;
+}
+
+.servicios-titulo .text-headline {
+  line-height: 1;
+}
+
+.servicios-texto {
+  grid-column: span 6;
+  margin-top: var(--spacer-2xl);
+  margin-bottom: var(--spacer-2xl);
+}
+
+.servicios-texto p:last-child {
+  margin-bottom: 0;
+}
+
+.servicios-contenidos .proyecto:not(:last-child) {
+  margin-bottom: var(--spacer-xl);
+}
+
+.servicios-contenidos .full-width {
+  grid-column: 1 / -1;
+}
+
+.servicios-contenidos .left {
+  grid-column: span 6;
+}
+
+.servicios-contenidos .right {
+  grid-column: span 6;
+  grid-column-end: -1;
+}
+
+@media (max-width: 900px) {
+  .servicios-titulo {
+    text-align: left;
+    grid-column: span 5;
+    grid-column-end: -1;
+    margin-top: var(--spacer-xl);
+    margin-bottom: var(--spacer-m);
+  }
+  .servicios-texto {
+    grid-column: span 5;
+    grid-column-end: -1;
+    margin-top: 0;
+    margin-bottom: var(--spacer-xl);
+  }
+
+  .servicios-contenidos .left,
+  .servicios-contenidos .right {
+    grid-column: span 5;
+  }
+
+  .servicios-contenidos .proyecto:not(:last-child) {
+    margin-bottom: var(--spacer-l);
+  }
+}
+
+@media (max-width: 700px) {
+  .servicios-titulo {
+    grid-column: 2 / span 6;
+    margin-top: var(--spacer-l);
+    margin-bottom: var(--spacer-s);
+  }
+  .servicios-texto {
+    grid-column: 2 / span 6;
+    margin-top: 0;
+    margin-bottom: var(--spacer-l);
+  }
+
+  .servicios-contenidos .left,
+  .servicios-contenidos .right {
+    grid-column: span 4;
+  }
+  .servicios-contenidos .proyecto:not(:last-child) {
+    margin-bottom: var(--spacer-m);
+  }
+}
+
+@media (max-width: 500px) {
+  .servicios-titulo {
+    grid-column: 1 / -1;
+  }
+  .servicios-titulo .text-headline {
+    line-height: 1.5;
+  }
+  .servicios-texto {
+    grid-column: 1 / -1;
+  }
+
+  .servicios-contenidos .left,
+  .servicios-contenidos .right {
+    grid-column: 1 / -1;
+  }
+}

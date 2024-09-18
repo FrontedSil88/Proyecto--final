@@ -1,0 +1,53 @@
+---
+layout: layouts/full.njk
+title: Servicios
+eleventyNavigation:
+  key: servicios
+  title: Servicios
+  order: 2
+---
+<div class="servicios-hero">
+  {% set elemento = {"imagen": "foto-1.jpg"} %}
+  {% include 'components/project.njk' %}
+</div>
+
+<div class="container servicios-contenidos">
+  <div class="servicios-titulo">
+    <h1 class="text-headline font-2">
+      Servicios
+    </h1>
+  </div>
+
+  <div class="servicios-texto">
+ <ul>
+ 
+    <li><h2>Creación sitios web para tu negocio:</h2> <br>
+    "Ofrecemos una amplia gama de servicios web,
+       desde el diseño y desarrollo de sitios web personalizados hasta el marketing digital 
+       y el posicionamiento en buscadores.Nuestro equipo de profesionales te acompañará en cada paso del proceso."</li><br>
+
+    {% set elemento = {"imagen": "foto-4.jpg"} %}
+    {% include 'components/project.njk' %}
+
+    <br><li><h2>Sistemas web para tu negocio:</h2><br>
+    "Imagina un mundo donde tus aplicaciones pueden comunicarse entre sí de forma fluida y eficiente.
+     Con nuestros servicios web, esa visión se convierte en realidad. Creamos sistemas web personalizados que se adaptan a tus necesidades específicas, 
+    permitiéndote integrar datos, funcionalidades y mejorar la experiencia de usuario."<br><br>
+    </li>
+
+    {% set elemento = {"imagen": "foto-3.jpg"} %}
+    {% include 'components/project.njk' %}
+
+ <br><li><h2>Marketing digital:</h2><br>
+
+¿Cansado de que tu sitio web pase desapercibido? ¡Es hora de darle un impulso! En MayDev
+ te ofrecemos soluciones de marketing digital personalizadas para que tu negocio destaque en el mundo online.<br><br><br>
+
+ {% set elemento = {"imagen": "foto-2.jpg"} %}
+    {% include 'components/project.njk' %}
+
+
+   
+ </ul>
+</div>
+

@@ -1,0 +1,22 @@
+---
+layout: layouts/full.njk
+title: Portafolio
+eleventyNavigation:
+  key: portafolio
+  title: Portafolio
+  order: 3
+---
+
+<div class="col-6 col-md-5 col-sm-4 col-xs-6">
+  {% for elemento in ilus %}
+    {% include 'components/project-ilu.njk' %}
+  {% endfor %}
+</div>
+
+<div class="col-6 col-md-5 col-sm-4 col-xs-6 portafolio-texto">
+  <h1 class="text-headline font-2">Portafolio</h1>
+  <p>
+    Somos una agencia digital apasionada por crear soluciones web a medida que impulsen el crecimiento de tu negocio. Con años de experiencia en el sector, ofrecemos servicios de diseño web, desarrollo de sistemas y marketing digital para ayudarte a alcanzar tus objetivos.
+  </p>
+
+</div>
